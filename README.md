@@ -21,3 +21,11 @@ Tiene relación de composición con Automora, asociación con Compra y relación
 UML:
 ![image](https://github.com/millrnv/Automotora1/assets/146766468/7172f6e6-1c44-4ecb-b502-064d66b6b776)
 
+Prompt:
+
+Me apoyó con el Gestor de Datos por tiempo
+![image](https://github.com/millrnv/Automotora1/assets/146766468/ef9130cb-cde3-4782-87f8-cd1928f99e0c)
+
+
+
+
