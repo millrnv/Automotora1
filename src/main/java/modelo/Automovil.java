@@ -44,8 +44,16 @@ public class Automovil extends Vehiculo {
 
 	public double velocidadMaxPermitida() {
 		double velMax = (HP/pesoVehiculo)*10;
-		return velMax;
+
+		double velocidadMaximaLimite = 100;
+
+		if (velMax > velocidadMaximaLimite) {
+			velMax = velocidadMaximaLimite;
+
+		}return velMax;
+
 	}
+
 
 	public String getTipoVehiculo() {
 		return "Automovil. ";

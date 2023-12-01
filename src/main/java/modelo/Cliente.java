@@ -28,10 +28,7 @@ public class Cliente {
 		return rut;
 	}
 
-	/**
-	 * 
-	 * @param marca
-	 */
+
 	public Vehiculo buscarVehiculoMarca(String marca) {
 		for(Vehiculo v : this.vehiculos){
 			if(v.getMarca().equals(marca)){
@@ -66,6 +63,7 @@ public class Cliente {
 	}
 
 	public void agregarVehiculosAlCarrito() {
+
 
 	}
 

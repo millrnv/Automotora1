@@ -44,6 +44,7 @@ public class Motocicleta extends Vehiculo {
 
 	public double velocidadMaxPermitida() {
 		double velMax = ((HP*2)/pesoVehiculo)*20;
+
 		return velMax;
 
 	}
