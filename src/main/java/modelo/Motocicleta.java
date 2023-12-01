@@ -6,6 +6,13 @@ public class Motocicleta extends Vehiculo {
 	private String tipoMotor;
 	private String suspension;
 
+	public Motocicleta(String marca, String modelo, int anioFabricacion, double pesoVehiculo, double precio, int cantStock, double HP, String tipoMotor, String suspension) {
+		super(marca, modelo, anioFabricacion, pesoVehiculo, precio, cantStock);
+		this.HP = HP;
+		this.tipoMotor = tipoMotor;
+		this.suspension = suspension;
+	}
+
 	public double getHP() {
 		// TODO - implement Motocicleta.getHP
 		throw new UnsupportedOperationException();

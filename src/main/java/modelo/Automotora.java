@@ -1,35 +1,57 @@
 package modelo;
 
+
 import java.util.*;
 
 public class Automotora {
 
-	protected Collection<Vehiculo> vehiculos;
-	private Collection<Cliente> clientes;
+	protected ArrayList<Vehiculo> vehiculos;
+	private ArrayList<Cliente> clientes;
 
-	public Vehiculo buscarVehiculo() {
-		// TODO - implement Automotora.buscarVehiculo
-		throw new UnsupportedOperationException();
+
+	public boolean agregarVehiculo(){
+		return true;
+
+
 	}
 
-	public boolean agregarCliente() {
-		// TODO - implement Automotora.agregarCliente
-		throw new UnsupportedOperationException();
+	public boolean clienteExiste(Cliente cliente){
+
+		for(Cliente c : clientes){
+			if(cliente.getRut().equals(c.getRut())){
+				return true;
+			}
+		}
+		return false;
+
+
+	}
+
+
+
+
+	public Vehiculo buscarVehiculo() {
+		return null;
+	}
+
+	public boolean agregarCliente(Cliente cliente) {
+		if(!clienteExiste(cliente)){
+			clientes.add(cliente);
+			return true;
+		}
+		return false;
 	}
 
 	public void catalogoVehiculos() {
-		// TODO - implement Automotora.catalogoVehiculos
-		throw new UnsupportedOperationException();
+
 	}
 
 	public void realizarVenta() {
-		// TODO - implement Automotora.realizarVenta
-		throw new UnsupportedOperationException();
+
 	}
 
 	public void getInfoVehiculo() {
-		// TODO - implement Automotora.getInfoVehiculo
-		throw new UnsupportedOperationException();
+
 	}
 
 }

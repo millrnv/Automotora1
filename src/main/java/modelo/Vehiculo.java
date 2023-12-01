@@ -6,10 +6,21 @@ public abstract class Vehiculo {
 	private Compra compra;
 	private String marca;
 	private String modelo;
-	private int anioFabricación;
+	private int anioFabricacion;
 	private double pesoVehiculo;
 	private double precio;
 	private int cantStock;
+
+	public Vehiculo(String marca, String modelo, int anioFabricacion, double pesoVehiculo, double precio, int cantStock){
+		this.marca =marca;
+		this.modelo=modelo;
+		this.anioFabricacion=anioFabricacion;
+		this.pesoVehiculo=pesoVehiculo;
+		this.precio=precio;
+		this.cantStock=cantStock;
+
+	}
+
 
 	public abstract double velocidadMaxPermitida();
 
@@ -17,10 +28,7 @@ public abstract class Vehiculo {
 		return this.marca;
 	}
 
-	/**
-	 * 
-	 * @param marca
-	 */
+
 	public void setMarca(String marca) {
 		this.marca = marca;
 	}
@@ -29,24 +37,18 @@ public abstract class Vehiculo {
 		return this.modelo;
 	}
 
-	/**
-	 * 
-	 * @param modelo
-	 */
+
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
 
-	public int getAnioFabricación() {
-		return this.anioFabricación;
+	public int getAnioFabricacion() {
+		return this.anioFabricacion;
 	}
 
-	/**
-	 * 
-	 * @param anioFabricación
-	 */
-	public void setAnioFabricación(int anioFabricación) {
-		this.anioFabricación = anioFabricación;
+
+	public void setAnioFabricacion(int anioFabricacion) {
+		this.anioFabricacion = anioFabricacion;
 	}
 
 	public void getPesoVehiculo() {
@@ -54,10 +56,7 @@ public abstract class Vehiculo {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
-	 * 
-	 * @param pesoVehiculo
-	 */
+
 	public void setPesoVehiculo(int pesoVehiculo) {
 		// TODO - implement Vehiculo.setPesoVehiculo
 		throw new UnsupportedOperationException();
@@ -67,10 +66,7 @@ public abstract class Vehiculo {
 		return this.precio;
 	}
 
-	/**
-	 * 
-	 * @param precio
-	 */
+
 	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
@@ -79,10 +75,7 @@ public abstract class Vehiculo {
 		return this.cantStock;
 	}
 
-	/**
-	 * 
-	 * @param cantStock
-	 */
+
 	public void setCantStock(int cantStock) {
 		this.cantStock = cantStock;
 	}

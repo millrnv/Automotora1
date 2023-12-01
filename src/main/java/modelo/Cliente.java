@@ -4,59 +4,85 @@ import java.util.*;
 
 public class Cliente {
 
-	private Automotora automotora;
-	private Collection<Compra> compras;
+
+	private ArrayList<Vehiculo> vehiculos;
+	private ArrayList<Compra> compras;
 	private String nombre;
 	private String apellido;
-	private String usuario;
-	private String contraseña;
+	private String rut;
+
+	public Cliente(String nombre, String apellido, String rut) {
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.rut = rut;
+		compras = new ArrayList<>();
+		vehiculos = new ArrayList<>();
+
+	}
+
+	public ArrayList<Compra> getCompras() {
+		return compras;
+	}
+
+	public String getRut() {
+		return rut;
+	}
 
 	/**
 	 * 
 	 * @param marca
 	 */
 	public Vehiculo buscarVehiculoMarca(String marca) {
-		// TODO - implement Cliente.buscarVehiculoMarca
-		throw new UnsupportedOperationException();
+		for(Vehiculo v : this.vehiculos){
+			if(v.getMarca().equals(marca)){
+				System.out.println(v);
+				return v;
+			}
+		}
+		System.out.println("El vehiculo con marca: " +marca+ " no se encuentra en el sistema. ");
+		return null;
+
+
 	}
 
-	/**
-	 * 
-	 * @param modelo
-	 */
+
 	public Vehiculo buscarVehiculoModelo(String modelo) {
-		// TODO - implement Cliente.buscarVehiculoModelo
-		throw new UnsupportedOperationException();
+		for(Vehiculo v : this.vehiculos){
+			if(v.getModelo().equals(modelo)){
+				System.out.println(v);
+				return v;
+			}
+		}
+		System.out.println("El vehiculo con modelo: " +modelo+ " no se encuentra en el sistema. ");
+		return null;
+
+
 	}
 
 	public Vehiculo buscarVehiculoTipo() {
-		// TODO - implement Cliente.buscarVehiculoTipo
-		throw new UnsupportedOperationException();
+		return null;
+
+
 	}
 
 	public void agregarVehiculosAlCarrito() {
-		// TODO - implement Cliente.agregarVehiculosAlCarrito
-		throw new UnsupportedOperationException();
+
 	}
 
 	public double verSubtotal() {
-		// TODO - implement Cliente.verSubtotal
-		throw new UnsupportedOperationException();
+		return 0;
+
 	}
 
 	public void registrarse() {
-		// TODO - implement Cliente.registrarse
-		throw new UnsupportedOperationException();
+
 	}
 
 	public String getNombre() {
 		return this.nombre;
 	}
 
-	/**
-	 * 
-	 * @param nombre
-	 */
+
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
@@ -65,17 +91,13 @@ public class Cliente {
 		return this.apellido;
 	}
 
-	/**
-	 * 
-	 * @param apellido
-	 */
+
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
 
 	public void crearCuenta() {
-		// TODO - implement Cliente.crearCuenta
-		throw new UnsupportedOperationException();
+
 	}
 
 }

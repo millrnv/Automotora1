@@ -6,6 +6,14 @@ public class Automovil extends Vehiculo {
 	private int nPuertas;
 	private double tamañoMotor;
 
+
+	public Automovil(String marca, String modelo, int anioFabricacion, double pesoVehiculo, double precio, int cantStock, double HP, int nPuertas, double tamañoMotor) {
+		super(marca, modelo, anioFabricacion, pesoVehiculo, precio, cantStock);
+		this.HP = HP;
+		this.nPuertas = nPuertas;
+		this.tamañoMotor = tamañoMotor;
+	}
+
 	public double getHP() {
 		// TODO - implement Automovil.getHP
 		throw new UnsupportedOperationException();
