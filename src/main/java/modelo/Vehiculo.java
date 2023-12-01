@@ -4,12 +4,13 @@ public abstract class Vehiculo {
 
 	private Automotora automotora;
 	private Compra compra;
-	private String marca;
-	private String modelo;
-	private int anioFabricacion;
-	private double pesoVehiculo;
-	private double precio;
-	private int cantStock;
+	protected String marca;
+	protected String modelo;
+	protected int anioFabricacion;
+	protected double pesoVehiculo;
+	protected double precio;
+	protected int cantStock;
+	protected String tipo;
 
 	public Vehiculo(String marca, String modelo, int anioFabricacion, double pesoVehiculo, double precio, int cantStock){
 		this.marca =marca;

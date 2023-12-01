@@ -11,30 +11,24 @@ public class Motocicleta extends Vehiculo {
 		this.HP = HP;
 		this.tipoMotor = tipoMotor;
 		this.suspension = suspension;
+		this.tipo = "Motocicleta";
+
 	}
 
 	public double getHP() {
-		// TODO - implement Motocicleta.getHP
-		throw new UnsupportedOperationException();
+		return HP;
 	}
 
-	/**
-	 * 
-	 * @param HP
-	 */
+
 	public void setHP(double HP) {
-		// TODO - implement Motocicleta.setHP
-		throw new UnsupportedOperationException();
+		this.HP = HP;
 	}
 
 	public String getTipoMotor() {
 		return this.tipoMotor;
 	}
 
-	/**
-	 * 
-	 * @param tipoMotor
-	 */
+
 	public void setTipoMotor(String tipoMotor) {
 		this.tipoMotor = tipoMotor;
 	}
@@ -43,22 +37,19 @@ public class Motocicleta extends Vehiculo {
 		return this.suspension;
 	}
 
-	/**
-	 * 
-	 * @param suspension
-	 */
+
 	public void setSuspension(String suspension) {
 		this.suspension = suspension;
 	}
 
 	public double velocidadMaxPermitida() {
-		// TODO - implement Motocicleta.velocidadMaxPermitida
-		throw new UnsupportedOperationException();
+		double velMax = ((HP*2)/pesoVehiculo)*20;
+		return velMax;
+
 	}
 
 	public String getTipoVehiculo() {
-		// TODO - implement Motocicleta.getTipoVehiculo
-		throw new UnsupportedOperationException();
+		return "Motocicleta. ";
 	}
 
 }

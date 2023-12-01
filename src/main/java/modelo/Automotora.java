@@ -9,6 +9,14 @@ public class Automotora {
 	private ArrayList<Cliente> clientes;
 
 
+	public ArrayList<Vehiculo> getVehiculos() {
+		return vehiculos;
+	}
+
+	public ArrayList<Cliente> getClientes() {
+		return clientes;
+	}
+
 	public boolean agregarVehiculo(){
 		return true;
 

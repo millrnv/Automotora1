@@ -12,30 +12,23 @@ public class Automovil extends Vehiculo {
 		this.HP = HP;
 		this.nPuertas = nPuertas;
 		this.tamañoMotor = tamañoMotor;
+		this.tipo = "Automovil";
 	}
 
 	public double getHP() {
-		// TODO - implement Automovil.getHP
-		throw new UnsupportedOperationException();
+		return HP;
 	}
 
-	/**
-	 * 
-	 * @param HP
-	 */
+
 	public void setHP(double HP) {
-		// TODO - implement Automovil.setHP
-		throw new UnsupportedOperationException();
+		this.HP = HP;
 	}
 
 	public int getNPuertas() {
 		return this.nPuertas;
 	}
 
-	/**
-	 * 
-	 * @param nPuertas
-	 */
+
 	public void setNPuertas(int nPuertas) {
 		this.nPuertas = nPuertas;
 	}
@@ -44,22 +37,18 @@ public class Automovil extends Vehiculo {
 		return this.tamañoMotor;
 	}
 
-	/**
-	 * 
-	 * @param tamañoMotor
-	 */
+
 	public void setTamañoMotor(double tamañoMotor) {
 		this.tamañoMotor = tamañoMotor;
 	}
 
 	public double velocidadMaxPermitida() {
-		// TODO - implement Automovil.velocidadMaxPermitida
-		throw new UnsupportedOperationException();
+		double velMax = (HP/pesoVehiculo)*10;
+		return velMax;
 	}
 
 	public String getTipoVehiculo() {
-		// TODO - implement Automovil.getTipoVehiculo
-		throw new UnsupportedOperationException();
+		return "Automovil. ";
 	}
 
 }
